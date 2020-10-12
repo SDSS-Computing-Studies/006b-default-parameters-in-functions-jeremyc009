@@ -43,8 +43,7 @@ def quadratic(a,b,c):
 
     
 def solution(lis):
-    li2=lis.sort()
-    x2=li2[1]
+    x2=lis[1]
     return x2
 
 def cosineLaw(a , b , angle , oppositeSide=True):
