@@ -30,8 +30,8 @@ def toRadians(angle):
 
 def quadratic(a,b,c):
     li1=[]
-    x1 = (-b + (math.sqrt(b**2 - 4 * a * c))) / (2*a)
-    x2=  (-b - (math.sqrt(b**2 - 4 * a * c))) / (2*a)
+    x1 = (-b + (math.sqrt((b**2) - (4 * a * c))) / (2*a)
+    x2 = (-b - (math.sqrt((b**2) - (4 * a * c))) / (2*a)
     li1.append(x1)
     li1.append(x2)
     li1.sort()
@@ -51,6 +51,5 @@ def cosineLaw(a , b , angle , oppositeSide=True):
         q2=(2*a*math.cos(toRadians(angle)))
         q3=(a**2 - b**2)
         c1=quadratic(q1,q2,q3)
-        c1=math.sqrt(c1)
         c2=solution(c1)
     return c2

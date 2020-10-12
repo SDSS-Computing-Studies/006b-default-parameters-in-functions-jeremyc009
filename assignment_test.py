@@ -1,5 +1,5 @@
 #! python3
-
+"""
 import assignment
 
 def test1():
@@ -8,6 +8,7 @@ def test1():
 def test2():
   assert "needle" in assignment.function()
   assert "needle2" in assignment.function(),"error Message"
+"""
 #!python3
 import assignment
 
