@@ -25,7 +25,7 @@ def factorPair(num, fact):
 
 def toRadians(angle):
     import math
-    rad=angle*(180/math.pi)
+    rad=angle*(math.pi/180)
     return rad
 
 def quadratic(a,b,c):
@@ -44,11 +44,13 @@ def solution(lis):
 def cosineLaw(a , b , angle , oppositeSide=True):
     import math
     c2=0
-    c2=a**2 + b**2 -(2 * a * b * math.cos(toRadians(angle)))
+    c2=a**2 + b**2 -(2 * a * b * (math.cos(toRadians(angle))))
+    c2=math.sqrt(c2)
     if oppositeSide==False:
         q1=1
         q2=(2*a*math.cos(toRadians(angle)))
         q3=(a**2 - b**2)
         c1=quadratic(q1,q2,q3)
+        c1=math.sqrt(c1)
         c2=solution(c1)
     return c2

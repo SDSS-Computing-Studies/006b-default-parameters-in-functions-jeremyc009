@@ -1,5 +1,5 @@
 import assignment
 
 
-answer = assignment.cosineLaw(6,9,34)
+answer = assignment.cosineLaw(10,3,50,oppositeSide=False)
 print(answer)
